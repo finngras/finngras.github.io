@@ -1,0 +1,61 @@
+/* https://gist.github.com/MWins/d98c3df6e921683e648e */
+/* Reset */
+
+/* Typography */
+
+/* Layout */
+
+/* Navigation */
+
+/* UI-elements */
+
+/* Forms */
+
+/* Media Queries */ 
+
+@font-face {
+    font-family: "BrookeShappell10";
+    src:
+        local("BrookeShappell10"),
+        url("Brookeshappell10.otf") format("opentype"),
+        url("Brookeshappell10.ttf") format("truetype"),
+        url("Brookeshappell10.woff") format("woff"),
+        url("Brookeshappell10.woff2") format("woff2")
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-1deg); }
+    40% { transform: rotate(2deg); }
+    60% { transform: rotate(1deg); }
+    80% { transform: rotate(-2deg); }
+}
+
+* {
+    font-family: BrookeShappell10, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(41, 69, 80);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(247, 228, 56);
+    animation: wiggle 1s step-start infinite;
+}
+
+p {
+    color: rgb(212, 203, 71);
+}
+
+img {
+    width: 720px; 
+    height: 405px;
+}
+
+video {
+    border: 20px solid white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px rgb(11, 29, 59);
+}
