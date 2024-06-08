@@ -1,0 +1,11 @@
+<header>
+    <h1>Finn Gras</h1>
+    <h3>animator/game dev/musician/whatever</h3>
+</header>
+<nav>
+    {% for item in site.data.navigation %}
+        <a class="nav-item" href="{{ item.link }}" {% if page.url == item.link %}style="background-color: #997747;"{% endif %}>
+            {{ item.name }}
+        </a>
+    {% endfor %}
+</nav>

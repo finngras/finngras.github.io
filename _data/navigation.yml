@@ -1,0 +1,10 @@
+- name: Animation
+  link: /animation
+- name: Games
+  link: /games
+- name: Music
+  link: /music
+- name: Showreel
+  link: /showreel
+- name: About
+  link: /about

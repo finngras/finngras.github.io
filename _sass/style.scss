@@ -1,0 +1,139 @@
+$backgroundColor: #ffffff;
+$bodyColor: #000000;
+
+@font-face {
+    font-family: "BrookeShappell10";
+    src:
+        local("BrookeShappell10"),
+        url("/assets/fonts/Brookeshappell10.otf") format("opentype"),
+        url("/assets/fonts/Brookeshappell10.ttf") format("truetype"),
+        url("/assets/fonts/Brookeshappell10.woff") format("woff"),
+        url("/assets/fonts/Brookeshappell10.woff2") format("woff2")
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-1deg); }
+    40% { transform: rotate(2deg); }
+    60% { transform: rotate(1deg); }
+    80% { transform: rotate(-2deg); }
+}
+
+* {
+    font-family: BrookeShappell10, Arial, Helvetica, sans-serif;
+}
+
+#top-button {
+    display: none; /* Hidden by default */
+    z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 30px; 
+    padding: 15px; 
+    border-radius: 15px; 
+    font-size: 20px;
+    color: white;
+    background-color: rgb(35, 131, 199);
+    cursor: pointer;
+}
+
+#top-button:hover {
+    background-color: #555;
+}
+
+body {
+    background-color: rgb(80, 55, 41);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url("/assets/media/fuzzball_touchup.png"); 
+    box-shadow: inset 0px -150px 50px -150px rgb(0, 0, 0);
+    min-height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content:center;
+}
+
+.nav-item {
+    color:ivory;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    background-color: rgba(17, 13, 1, 0.44);
+}
+
+.main-wrapper {
+    max-width: 1282px;
+    margin: auto;
+    padding: 30px 30px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px 20px;
+}
+
+.menu-item {
+    width: 30%;
+    height: 30%;
+}
+
+.menu-img {
+    margin-top: 50px;
+    object-fit: cover;
+    width: 300px; 
+    height: 300px;
+}
+
+h1 {
+    font-size: 80px;
+    color: rgb(225, 207, 154);
+    text-shadow: 5px 5px 5px rgb(46, 23, 9);
+    /*animation: wiggle 1s step-start infinite;*/
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(225, 207, 154);
+    text-shadow: 5px 5px 5px rgb(46, 23, 9);
+}
+
+h3 {
+    color: ivory;
+    letter-spacing: 2px;
+}
+
+p {
+    color: rgb(212, 203, 71);
+}
+
+img {
+    max-width: 720%; 
+    max-height: 405px;
+}
+
+video {
+    width: 720px; 
+    height:405px;
+    box-sizing: content-box;
+    border: 20px solid white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 40px rgb(44, 31, 28);
+}
