@@ -1,11 +1,16 @@
 <header>
-    <h1>Finn Gras</h1>
-    <h3>animator/game dev/musician/whatever</h3>
+    <a href="/" style="z-index: 2;"><h1 style="z-index: 3;">Finn Gras</h1></a>
+    <h3 style="z-index: 2;">animator/game dev/musician/whatever</h3>
 </header>
 <nav>
     {% for item in site.data.navigation %}
-        <a class="nav-item" href="{{ item.link }}" {% if page.url == item.link %}style="background-color: #997747;"{% endif %}>
+        <a class="nav-item" href="{{ item.link }}" {% if page.url == item.link %}style="background-color: #67BF90;;"{% endif %}>
             {{ item.name }}
         </a>
     {% endfor %}
 </nav>
+<h3 style="text-align: center; padding-block-start: 0;">
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+    Under construction
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+</h3>

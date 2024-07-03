@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title> Music - Finn Gras </title>
-        <link rel="icon" href="/assets/media/favicon.png">
+        <link rel="icon" href="/assets/media/favicon.webp">
         <link rel="stylesheet" href="/assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-    <h1>Finn Gras</h1>
-    <h3>animator/game dev/musician/whatever</h3>
+    <a href="/" style="z-index: 2;"><h1 style="z-index: 3;">Finn Gras</h1></a>
+    <h3 style="z-index: 2;">animator/game dev/musician/whatever</h3>
 </header>
 <nav>
     
@@ -21,7 +22,7 @@
             Games
         </a>
     
-        <a class="nav-item" href="/music" style="background-color: #997747;">
+        <a class="nav-item" href="/music" style="background-color: #67BF90;;">
             Music
         </a>
     
@@ -34,18 +35,48 @@
         </a>
     
 </nav>
+<h3 style="text-align: center; padding-block-start: 0;">
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+    Under construction
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+</h3>
 
         <div class="main-wrapper">
-            <h2>music</h2>
-<audio controls><source src="/assets/music/Aki.mp3" type="audio/mpeg"></audio> 
+            <h2>Music</h2>
 <br>
-<audio controls><source src="/assets/music/paper march.mp3" type="audio/mpeg"></audio> 
+
+<p>tracks from my game <i>Climbing the Peak</i>:</p>
+<audio controls><source src="/assets/music/ohshis_2.wav" type="audio/mpeg"></audio> 
 <br>
-<audio controls><source src="/assets/music/ScopeV2.mp3" type="audio/mpeg"></audio> 
+<audio controls><source src="/assets/music/Beep.wav" type="audio/mpeg"></audio> 
 <br>
+<audio controls><source src="/assets/music/Drafty Castle.wav" type="audio/mpeg"></audio> 
+<br>
+<br>
+
+<p>Music for my animation film:</p>
 <audio controls><source src="/assets/music/water worldV02.mp3" type="audio/mpeg"></audio> 
+<br>
+<br>
+
+<p>Jazzy detective theme:</p>
+<audio controls><source src="/assets/music/music.ogg" type="audio/ogg"></audio> 
+<br>
+<br>
+
+<p>miauw.mp3:</p>
+<audio controls><source src="/assets/music/Miauw_instrumental.mp3" type="audio/mpeg"></audio> 
+
+
         </div>   
         
+        <div id="viewer">
+    <span id="viewer-close">&times;</span>
+    <img id="viewer-img">
+    <div id="viewer-caption"></div>
+</div>
+
+<script src="/assets/js/viewer.js"></script>
         <footer>
             
 </footer>

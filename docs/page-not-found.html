@@ -3,13 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title> Finn Gras </title>
-        <link rel="icon" href="/assets/media/favicon.png">
+        <link rel="icon" href="/assets/media/favicon.webp">
         <link rel="stylesheet" href="/assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-    <h1>Finn Gras</h1>
-    <h3>animator/game dev/musician/whatever</h3>
+    <a href="/" style="z-index: 2;"><h1 style="z-index: 3;">Finn Gras</h1></a>
+    <h3 style="z-index: 2;">animator/game dev/musician/whatever</h3>
 </header>
 <nav>
     
@@ -34,12 +35,24 @@
         </a>
     
 </nav>
+<h3 style="text-align: center; padding-block-start: 0;">
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+    Under construction
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+</h3>
 
         <div class="main-wrapper">
             <p>Unfortunately that page could not be found.</p>
 <a href="/"> Click here to return to the home page.</a>
         </div>   
         
+        <div id="viewer">
+    <span id="viewer-close">&times;</span>
+    <img id="viewer-img">
+    <div id="viewer-caption"></div>
+</div>
+
+<script src="/assets/js/viewer.js"></script>
         <footer>
             
 </footer>

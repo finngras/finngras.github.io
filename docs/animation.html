@@ -3,17 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title> Animations - Finn Gras </title>
-        <link rel="icon" href="/assets/media/favicon.png">
+        <link rel="icon" href="/assets/media/favicon.webp">
         <link rel="stylesheet" href="/assets/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-    <h1>Finn Gras</h1>
-    <h3>animator/game dev/musician/whatever</h3>
+    <a href="/" style="z-index: 2;"><h1 style="z-index: 3;">Finn Gras</h1></a>
+    <h3 style="z-index: 2;">animator/game dev/musician/whatever</h3>
 </header>
 <nav>
     
-        <a class="nav-item" href="/animation" style="background-color: #997747;">
+        <a class="nav-item" href="/animation" style="background-color: #67BF90;;">
             Animation
         </a>
     
@@ -34,28 +35,121 @@
         </a>
     
 </nav>
+<h3 style="text-align: center; padding-block-start: 0;">
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+    Under construction
+    <img src="assets/media/under-construction.png" width="100" style="display: inline;">
+</h3>
 
         <div class="main-wrapper">
             <h2>Animation</h2>
 
-<img src="/assets/media/chopped-man.png">
-<br>
-<img src="/assets/media/damn greasepencil.png">
-<br>
-<img src="/assets/media/fuzzball_touchup.png">
-<br>
-<img src="/assets/media/Grease pencil practice 2.png">
-<br>
-<img src="/assets/media/KING.png">
-<br>
-<img src="/assets/media/shirt-alien.png">
-<br>
-<img src="/assets/media/styleframe.png">
-<br>
-<img src="/assets/media/vis.png">
-<br>
+
+<h3>Short film</h3>
+<p>Made at the end of my first year studying animation at HKU Utrecht.</p>
+<video controls width="700">
+    <source src="/assets/media/bigger-fish-compressed.mp4">
+</video> 
+<h3>Animations with sound</h3>
+<video controls width="700">
+    <source src="/assets/media/potion-seller.mp4">
+</video> 
+<video controls width="700">
+    <source src="/assets/media/alley-cat.mp4">
+</video> 
+<video controls width="700">
+    <source src="/assets/media/cube-light.mp4">
+</video> 
+<video controls width="700">
+    <source src="/assets/media/lip-sync-limmy.mp4">
+</video> 
+<video controls width="700">
+    <source src="/assets/media/sketchman.mp4">
+</video> 
+<h3>GIF's</h3>
+<div class="gallery-container" style="flex-direction: column;">
+    
+    <figure class="gallery-item" style="width: 700px;" >
+        <img src="/assets/media/anitober-day-4.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="width: 700px;" >
+        <img src="/assets/media/anitober-day-6.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="width: 700px;" >
+        <img src="/assets/media/anitober-day-14.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="width: 700px;" >
+        <img src="/assets/media/characters/3d-frog-walk.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="width: 700px;" >
+        <img src="/assets/media/characters/fuzzball-rotate.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+</div>
+
+<h3>Multi-media turnaround</h3>
+<div class="gallery-container">
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/charcoal.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/grit-inverted.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/riso-white.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/clay-comp.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/riso-black.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/grit.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/clay-raw.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="/assets/media/person-rotate/paper.webp">
+        <figcaption></figcaption>
+    </figure>
+    
+</div>
+
         </div>   
         
+        <div id="viewer">
+    <span id="viewer-close">&times;</span>
+    <img id="viewer-img">
+    <div id="viewer-caption"></div>
+</div>
+
+<script src="/assets/js/viewer.js"></script>
         <footer>
             
 </footer>

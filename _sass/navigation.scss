@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.nav-item {
+    color: $white;
+    padding: min(10px, 10%);
+    margin-inline: 3px;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav-item:hover {
+    background-color: $accent-dark;
+    transform: scale(1.1);
+}

@@ -1,0 +1,8 @@
+<div class="gallery-container" style="flex-direction: column;">
+    {% for item in site.data.[include.file] %}
+    <figure class="gallery-item" style="width: 700px;" >
+        <img src="{{ item.path }}">
+        <figcaption>{{ item.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+</div>

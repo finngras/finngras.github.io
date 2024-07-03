@@ -1,0 +1,8 @@
+<div class="gallery-container">
+    {% for item in site.data.[include.file] %}
+    <figure class="gallery-item" style="height: clamp(200px, 15vh, 400px); max-width: calc(50% - 10px);">
+        <img src="{{ item.path }}">
+        <figcaption>{{ item.caption }}</figcaption>
+    </figure>
+    {% endfor %}
+</div>

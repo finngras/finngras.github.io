@@ -24,82 +24,197 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "BrookeShappell10";
   src: local("BrookeShappell10"), url("/assets/fonts/Brookeshappell10.otf") format("opentype"), url("/assets/fonts/Brookeshappell10.ttf") format("truetype"), url("/assets/fonts/Brookeshappell10.woff") format("woff"), url("/assets/fonts/Brookeshappell10.woff2") format("woff2");
 }
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(-1deg);
-  }
-  40% {
-    transform: rotate(2deg);
-  }
-  60% {
-    transform: rotate(1deg);
-  }
-  80% {
-    transform: rotate(-2deg);
-  }
-}
 * {
   font-family: BrookeShappell10, Arial, Helvetica, sans-serif;
-}
-
-#top-button {
-  display: none; /* Hidden by default */
-  z-index: 99;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 20px;
-  color: white;
-  background-color: rgb(35, 131, 199);
-  cursor: pointer;
-}
-
-#top-button:hover {
-  background-color: #555;
+  letter-spacing: 0.04em;
 }
 
 body {
-  background-color: rgb(80, 55, 41);
+  background-color: #3b3b3b;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 15px;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 60px;
+  color: #D4F1B1;
+  text-shadow: 0px 0px 10px #67BF90;
+}
+
+h3 {
+  font-size: 40px;
+  color: #FCDBA6;
+  text-shadow: 0px 0px 10px #ad6743;
+  padding-block-start: 1em;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  padding-block-end: 1em;
+}
+
+video {
+  max-width: 100%;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+audio {
+  max-width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-portrait {
+  position: relative;
+  height: 300px;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.401);
+}
+
+.about-portrait::after {
+  content: "";
+  position: absolute;
+  background: radial-gradient(transparent 20%, black);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.about-portrait img {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.about-text {
+  max-width: 40%;
+  min-width: 300px;
+}
+
+.about-contact {
+  width: 20%;
+  min-width: 300px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.about-contact img {
+  filter: drop-shadow(0px 0px 10px #ad6743);
+  display: inline-block;
+  width: 1em;
+}
+
+.about-contact p {
+  font-size: 1.7em;
+}
+
+.about-contact a {
+  text-decoration: none;
 }
 
 header {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  background-image: url("/assets/media/fuzzball_touchup.png");
+  height: clamp(300px, 25vh, 500px);
+  text-shadow: 5px 5px 10px rgb(0, 0, 0);
   box-shadow: inset 0px -150px 50px -150px rgb(0, 0, 0);
-  min-height: 300px;
+  background-image: url("/assets/media/characters/chopped-man.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+header a {
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 80px;
+  color: #D4F1B1;
+  text-shadow: 0px 0px 0.2em #67BF90;
+}
+
+header h3 {
+  color: #FCDBA6;
+  text-shadow: 0px 0px 0.2em rgb(51, 23, 10);
+}
+
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .nav-item {
-  color: ivory;
-  padding: 20px;
-  font-size: 18px;
+  color: #FFFFF0;
+  padding: min(10px, 10%);
+  margin-inline: 3px;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .nav-item:hover {
-  background-color: rgba(17, 13, 1, 0.44);
+  background-color: #3C5D4D;
+  transform: scale(1.1);
 }
 
-.main-wrapper {
-  max-width: 1282px;
-  margin: auto;
-  padding: 30px 30px;
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 10px;
+  margin-block: 20px;
+}
+
+.gallery-item {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.gallery-item figcaption {
+  display: none;
+}
+
+.gallery-item img,
+.gallery-item video {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.1s ease-out;
+}
+
+.gallery-item img:hover,
+.gallery-item video:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px #222);
 }
 
 .menu {
@@ -122,40 +237,69 @@ nav {
   height: 300px;
 }
 
-h1 {
-  font-size: 80px;
-  color: rgb(225, 207, 154);
-  text-shadow: 5px 5px 5px rgb(46, 23, 9);
-  /*animation: wiggle 1s step-start infinite;*/
+#viewer {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
 }
 
-h2 {
-  font-size: 50px;
-  color: rgb(225, 207, 154);
-  text-shadow: 5px 5px 5px rgb(46, 23, 9);
+#viewer-img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
 }
 
-h3 {
-  color: ivory;
-  letter-spacing: 2px;
+#viewer-caption {
+  width: 100%;
+  padding: 15px 20px;
+  color: #ccc;
+  text-align: center;
+  font-size: 30px;
 }
 
-p {
-  color: rgb(212, 203, 71);
+#viewer-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-img {
-  max-width: 720%;
-  max-height: 405px;
+#viewer-close:hover,
+#viewer-close:focus {
+  color: #bbb;
 }
 
-video {
-  width: 720px;
-  height: 405px;
-  box-sizing: content-box;
-  border: 20px solid white;
+#top-button {
+  display: none; /* Hidden by default */
+  z-index: 99;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 15px;
   border-radius: 15px;
-  box-shadow: 10px 10px 40px rgb(44, 31, 28);
+  font-size: 30px;
+  color: #FFFFF0;
+  background-color: #67BF90;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#top-button:hover {
+  background-color: #3C5D4D;
 }
 
 /*# sourceMappingURL=main.css.map */

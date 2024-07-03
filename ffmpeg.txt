@@ -1,0 +1,2 @@
+convert all mp4 files in directory to webp lossless looping
+for %f in (*mp4) do ffmpeg -i "%f" -vcodec libwebp -lossless 1 -loop 0 -preset default -an -vsync 0 "%~nf.webp"

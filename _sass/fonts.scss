@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "BrookeShappell10";
+    src:
+        local("BrookeShappell10"),
+        url("/assets/fonts/Brookeshappell10.otf") format("opentype"),
+        url("/assets/fonts/Brookeshappell10.ttf") format("truetype"),
+        url("/assets/fonts/Brookeshappell10.woff") format("woff"),
+        url("/assets/fonts/Brookeshappell10.woff2") format("woff2")
+}
+
+* {
+    font-family: BrookeShappell10, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.04em;
+}

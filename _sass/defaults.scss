@@ -1,0 +1,39 @@
+body {
+    background-color: $grey-dark;
+}
+
+.main-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 15px;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 60px;
+    color: $accent-light;
+    text-shadow: 0px 0px 10px $accent-mid;
+}
+
+h3 {
+    font-size: 40px;
+    color: $main-light;
+    text-shadow: 0px 0px 10px $main-mid;
+    padding-block-start: 1em;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    padding-block-end: 1em;
+}
+
+video {
+    max-width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+audio {
+    max-width: 100%;
+}
