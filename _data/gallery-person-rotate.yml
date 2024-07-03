@@ -1,8 +1,8 @@
-- path: /assets/media/person-rotate/charcoal.webp
-- path: /assets/media/person-rotate/grit-inverted.webp
-- path: /assets/media/person-rotate/riso-white.webp
-- path: /assets/media/person-rotate/clay-comp.webp
-- path: /assets/media/person-rotate/riso-black.webp
-- path: /assets/media/person-rotate/grit.webp
-- path: /assets/media/person-rotate/clay-raw.webp
-- path: /assets/media/person-rotate/paper.webp
+- path: /assets/media/person-rotate/charcoal-compressed.webp
+- path: /assets/media/person-rotate/grit-inverted-compressed.webp
+- path: /assets/media/person-rotate/riso-white-compressed.webp
+- path: /assets/media/person-rotate/clay-comp-compressed.webp
+- path: /assets/media/person-rotate/riso-black-compressed.webp
+- path: /assets/media/person-rotate/grit-compressed.webp
+- path: /assets/media/person-rotate/clay-raw-compressed.webp
+- path: /assets/media/person-rotate/paper-compressed.webp
