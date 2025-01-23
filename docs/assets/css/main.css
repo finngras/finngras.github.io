@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #3b3b3b;
+  background-color: rgb(49, 58, 70);
 }
 
 .main-wrapper {
@@ -42,8 +42,8 @@ body {
 
 h2 {
   font-size: 60px;
-  color: #D4F1B1;
-  text-shadow: 0px 0px 10px #67BF90;
+  color: #b1f1ec;
+  text-shadow: 0px 0px 10px #67b2bf;
 }
 
 h3 {
@@ -138,11 +138,12 @@ header {
   height: clamp(300px, 25vh, 500px);
   text-shadow: 5px 5px 10px rgb(0, 0, 0);
   box-shadow: inset 0px -150px 50px -150px rgb(0, 0, 0);
-  background-image: url("/assets/media/characters/chopped-man.png");
+  background-color: rgb(26, 91, 189);
+  background-image: url("/assets/media/characters/3d-fish-compressed.png");
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: 35%;
   overflow: hidden;
 }
 
@@ -152,8 +153,8 @@ header a {
 
 header h1 {
   font-size: 80px;
-  color: #D4F1B1;
-  text-shadow: 0px 0px 0.2em #67BF90;
+  color: #b1f1ec;
+  text-shadow: 0px 0px 0.2em #67b2bf;
 }
 
 header h3 {
@@ -181,7 +182,7 @@ nav {
 }
 
 .nav-item:hover {
-  background-color: #3C5D4D;
+  background-color: #3c565d;
   transform: scale(1.1);
 }
 
@@ -294,13 +295,13 @@ nav {
   border-radius: 15px;
   font-size: 30px;
   color: #FFFFF0;
-  background-color: #67BF90;
+  background-color: #67b2bf;
   cursor: pointer;
   text-decoration: none;
 }
 
 #top-button:hover {
-  background-color: #3C5D4D;
+  background-color: #3c565d;
 }
 
 /*# sourceMappingURL=main.css.map */
